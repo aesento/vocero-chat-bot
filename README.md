@@ -586,6 +586,8 @@ cerebro conectado puede responderlos; admite texto y conserva la conversación
 en la base de datos de esta instancia. Para una instalación solo web, puedes
 poner `CHANNELS=webchat`; WhatsApp sigue disponible en la instancia.
 
+Para instalar esta rama en tu VPS, sigue la [guía de despliegue](docs/despliegue-vps-chat-web.md).
+
 Con más de un canal encendido, la Bandeja enseña el distintivo de cada
 conversación y permite filtrar por canal. El contacto, el pipeline, la ficha
 y el agente son los mismos: un lead es un lead, escriba por donde escriba.
