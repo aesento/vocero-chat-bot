@@ -3,8 +3,6 @@
 Esta guía despliega la rama `feat/067-chat-web` en un repositorio independiente.
 Esa rama incluye el conector de chat web y aún no tiene una imagen publicada
 propia; Compose debe construir la imagen del CRM desde el código de la rama.
-Antes del despliegue, la rama debe estar subida al nuevo repositorio que elijas:
-el fork viejo no se usa como destino de esta instalación.
 
 ## Antes de empezar
 
@@ -26,9 +24,6 @@ Clona la rama con el chat web:
 git clone --branch feat/067-chat-web https://github.com/aesento/vocero-chat-bot.git vocero
 cd vocero
 ```
-
-Reemplaza `USUARIO/REPO_NUEVO` por la ruta del repositorio independiente una vez
-creado y con la rama `feat/067-chat-web` publicada.
 
 Con Node 22 y pnpm disponibles, genera los secretos locales y valida el entorno:
 
@@ -110,5 +105,6 @@ los volúmenes al recrear los contenedores.
   80/443 en Caddy y el puerto SSH.
 - Configura copias de seguridad fuera del VPS y prueba la restauración antes
   de guardar datos reales.
-- El despliegue utiliza esta rama del fork; no actualices con `git pull` de
-  `main` del proyecto original, porque no contiene todavía estos cambios.
+- El PR de esta rama está pendiente de revisión. Para actualizar esta instalación,
+  usa `git pull --ff-only origin feat/067-chat-web` una vez que hayas clonado la
+  rama indicada arriba.
